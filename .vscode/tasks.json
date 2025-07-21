@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start MovieWorld React App",
+      "type": "shell",
+      "command": "npm start",
+      "args": [],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build MovieWorld React App",
+      "type": "shell",
+      "command": "npm run build",
+      "args": [],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test MovieWorld React App",
+      "type": "shell",
+      "command": "npm test",
+      "args": [],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
