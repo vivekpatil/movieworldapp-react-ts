@@ -113,20 +113,6 @@ The API endpoints are configured in `src/apiEndpoints.ts`. The app currently sup
 - **Local Development API**: For testing with local backend
 
 
-## 🎯 Future Enhancements
-
-- Search functionality
-- Movie filtering and sorting
-- User favorites and watchlists
-- Movie recommendations
-- User reviews and ratings
-
-## 🐛 Known Issues
-
-- Check the browser console for any runtime errors
-- Ensure API endpoints are accessible
-- Some older browsers may require polyfills
-
 ## 📄 License
 
 This project is private and not licensed for public use.
