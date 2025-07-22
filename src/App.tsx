@@ -9,6 +9,7 @@ export type Movie = {
   ID: string;
   Type: string;
   Poster: string;
+  guid: string;
 };
 
 function App() {
@@ -34,8 +35,8 @@ function App() {
     setDetailsLoading(true);
     setDetailsError(null);
     try {
-      const detailsData = await fetchMovieDetails(movie.ID);
-      
+      const detailsData = await fetchMovieDetails(movie.ID, movie.guid);
+
       setDetails(detailsData);
       // Capture price from detailsData
       setPrice(detailsData?.price ?? null);

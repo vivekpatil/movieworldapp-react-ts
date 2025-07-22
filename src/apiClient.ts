@@ -28,6 +28,7 @@ export async function apiRequest<T = any>(url: string, config?: ApiRequestConfig
     }
     const response = await fetch(finalUrl, fetchConfig);
     if (!response.ok) {
+      
       const errorData = await response.json().catch(() => ({}));
       throw new Error(errorData?.message || response.statusText || 'API request failed');
     }

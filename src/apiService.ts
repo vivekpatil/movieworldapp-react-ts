@@ -12,13 +12,14 @@ export async function fetchMovies(): Promise<Movie[]> {
       ID: m.id,
       Type: m.type,
       Poster: m.poster,
+      guid: m.guid, // Ensure guid is included
     }));
   }
   throw new Error('No movies found.');
 }
 
-export async function fetchMovieDetails(id: string): Promise<any> {
-  const url = MOVIE_DETAILS_ENDPOINT(id);
+export async function fetchMovieDetails(id: string,guid:string): Promise<any> {
+  const url = MOVIE_DETAILS_ENDPOINT(id,guid);
   const data = await apiRequest(url);
   return data;
 }
